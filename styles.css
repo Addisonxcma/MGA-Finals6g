@@ -1,0 +1,226 @@
+/* Prim-Back - #FFFFFF, Prim-text - 1A1A1A, Sec-text - 6B7260, Acc-One - 4F4655, Acc-Two - #10B981, Light-back - F9FAFB*/
+/* Body styles */
+body {
+    background-color: #F9FAFB;
+    color: #6b7260;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*Navigation bar*/
+.navbar {
+    background-color: #F9FAFB;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+nav .navitem {
+    display: inline-block;
+    background-color: #F9FAFB;
+    color: #6b7260;
+    padding: 10px 20px;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav .navitem:hover {
+    color: #1A1A1A;
+} 
+
+nav .navhead {
+    background-color: #F9FAFB;
+    color: #6b7260;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+nav .navhead:hover {
+    color: #1A1A1A;
+}
+
+/* Mobile navbar using java */
+.mobile-navbar {
+    background-color: #F9FAFB;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #F9FAFB;
+    color: #6b7260;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #F9FAFB;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+.mobile-navitem {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #6b7260;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-navitem:hover {
+    background-color: #ddd;
+    color: #111;
+}
+
+/* Main content area */
+
+.hero {
+    background-color: #F9FAFB;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+}
+
+.missionstatement {
+    background-color: #F9FAFB;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    text-align: center;
+}
+
+.donation {
+    background-color: #F9FAFB;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    text-align: center;
+}
+
+.donbutton {
+    background-color: #BBBF95;
+    color: white;
+    padding: 10px 20px;
+    border: solid 2px #BBBF95;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: #f9fafb;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.modal-content input, .modal-content select, .modal-content button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    background-color: #BBBF95;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #BBBF95;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+/*Footer*/
+footer {
+    background-color: #F9FAFB;
+    color: #1A1A1A;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1600px) {
+    nav .navitem {
+        font-size: 18px;
+        margin-left: 10%;
+    }
+    nav .navhead {
+        font-size: 24px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}

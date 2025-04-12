@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you Fur your Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Findex.html" class="w3-round-xlarge navhead navbar">Thank You Fur Your Service</a>
+                <div class="w3-bar">
+                    <a class="w3-bar-item w3-round-xlarge navitem" href="about.html">About Us</a>
+                    <a class="w3-bar-item w3-round-xlarge navitem" href="stories.html">Success Stories</a>
+                    <a class="w3-bar-item w3-round-xlarge navitem" href="services.html">Meet The Animals</a>
+                    <a class="w3-bar-item w3-round-xlarge navitem" href="application.html">Adoption Program</a>
+                    </div>
+        </nav>
+    </header>
+    <main>
+        <!--Javascript to help with the flow of the transition from desktop to mobile. Had help from examples from W3School, as well as from bootstrap.com-->
+        <script>
+            // JavaScript to alternate HTML content
+            function updateHTMLContent() {
+                const header = document.querySelector('header');
+                const footerText = document.querySelector('footer p a');
+
+                if (window.innerWidth < 1300) {
+                    // Replace navbar for smaller screens
+                    header.innerHTML = `
+                        <nav class="mobile-navbar">
+                            <a href="Findex.html" class="w3-round-xlarge navhead navbar">Thank You Fur Your Service</a>
+                            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                            <div id="mobile-menu" class="mobile-menu">
+                                <a href="about.html" class="mobile-navitem">About Us</a>
+                                <a href="stories.html" class="mobile-navitem">Success Stories</a>
+                                <a href="services.html" class="mobile-navitem">Meet The Animals</a>
+                                <a href="application.html" class="mobile-navitem">Adoption Program</a>
+                            </div>
+                        </nav>
+                    `;
+                    footerText.textContent = "Contact Us"; // Simplified footer text to allow for mobile
+                } else {
+                    // Restore navbar for larger screens
+                    header.innerHTML = `
+                        <nav class="navbar">
+                            <a href="Findex.html" class="w3-round-xlarge navhead navbar">Thank You Fur Your Service</a>
+                            <div class="w3-bar">
+                                <a class="w3-bar-item w3-round-xlarge navitem" href="about.html">About Us</a>
+                                <a class="w3-bar-item w3-round-xlarge navitem" href="stories.html">Success Stories</a>
+                                <a class="w3-bar-item w3-round-xlarge navitem" href="services.html">Meet The Animals</a>
+                                <a class="w3-bar-item w3-round-xlarge navitem" href="application.html">Adoption Program</a>
+                            </div>
+                        </nav>
+                    `;
+                    footerText.textContent = "Have any questions? Please feel free to contact us here."; // Full footer text for desktop
+                }
+            }
+
+
+            function toggleMenu() {
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.toggle('show');
+            }
+
+
+            window.addEventListener('resize', updateHTMLContent);
+            window.addEventListener('load', updateHTMLContent);
+
+            // Open the modal
+            function openModal() {
+                document.getElementById('applyModal').style.display = 'block';
+            }
+
+            // Close the modal
+            function closeModal() {
+                document.getElementById('applyModal').style.display = 'none';
+            }
+
+            // Close the modal by clicking outside of it
+            window.onclick = function(event) {
+                const modal = document.getElementById('applyModal');
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            }
+
+            // Open the donation modal
+            function openDonationModal() {
+                document.getElementById('donationModal').style.display = 'block';
+            }
+
+            // Close the donation modal
+            function closeDonationModal() {
+                document.getElementById('donationModal').style.display = 'none';
+            }
+
+            // Close the modal when clicking outside of it
+            window.onclick = function(event) {
+                const modal = document.getElementById('donationModal');
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            }
+        </script>
+        <section class="hero">
+            <h1>Welcome to Thank You Fur Your Service</h1>
+            <p>We are a non-profit organization located in Warner robins, Goergia. We focus on connecting veterans with service animals to help them heal and thrive. All of our resources come from locals to aid veterans within our region.</p>
+        </section>
+        <section class="missionstatement">
+            <h3>"At Thank You Fur Your Service, our mission is to provide support for the ones who put their all on the line."</h3>
+        </section>
+        <section class="donation">
+            <h2>How could I help?</h2>
+            <p>We are always looking for people to assist in training, taking care of, and the upkeep of our animals. If You would like to assist, feel free to apply here.</p>
+            <button class="w3-button w3-round-xlarge donbutton" onclick="openModal()">Apply to Work In-Person</button> <!--Buttons were used from W3 School-->
+        </section>
+        <section class="donation">
+            <h2>Other ways to help</h2>
+            <h3> There are always other ways to help aswell. due to us being a non-profit, we are a purely donation driven organization. Every Cent goes towards helping out Veterans. If you would like to donate, Please click below.</h3>
+            <button class="w3-button w3-round-xlarge donbutton" onclick="openDonationModal()">Donate Now</button> <!--Buttons were used from W3 School-->
+        </section>
+        <!-- Popup Modal -->
+        <div id="applyModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Apply to Work In-Person</h2>
+                <p >Please fill out the form below to apply for an in-person position.</p>
+                <form id="applyForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="position">Position:</label>
+                    <select id="position" name="position">
+                        <option value="trainer">Animal Trainer</option>
+                        <option value="caretaker">Animal Caretaker</option>
+                        <option value="volunteer">Volunteer</option>
+                    </select>
+                    
+                    <label for="availability">Availability:</label>
+                    <input type="text" id="availability" name="availability" placeholder="e.g., Weekdays, Weekends" required>
+                    
+                    <button type="submit">Submit Application</button>
+                </form>
+            </div>
+        </div>
+        <!-- Donation Popup Modal -->
+<div id="donationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDonationModal()">&times;</span>
+            <h2>Donate to Thank You Fur Your Service</h2>
+            <p>Your generous donation helps us provide support for veterans and service animals. Every contribution makes a difference!</p>
+            <form id="donationForm">
+                <label for="donorName">Name:</label>
+                <input type="text" id="donorName" name="donorName" required>
+                
+                <label for="donorEmail">Email:</label>
+                <input type="email" id="donorEmail" name="donorEmail" required>
+                
+                <label for="donationAmount">Donation Amount:</label>
+                <input type="number" id="donationAmount" name="donationAmount" placeholder="Enter amount in USD" required>
+            
+                <button type="submit">Donate Now</button>
+            </form>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p><a href="contact.html">Have any questions? Please feel free to contact us here.</a></p>
+        <p>&copy; 2025, Thank You Fur Your Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>
