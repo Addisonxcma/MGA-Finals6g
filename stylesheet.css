@@ -1,0 +1,456 @@
+/* Prim-Back - #FFFFFF, Prim-text - 1A1A1A, Sec-text - 6B7260, Acc-One - 4F4655, Acc-Two - #10B981, Light-back - F9FAFB*/
+/* Body styles */
+.body {
+    background-color: #F9FAFB;
+    color: #6b7260;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation bar*/
+
+.navbar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+    background-color: #F9FAFB;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav .navitem {
+    display: inline-block;
+    color: #6b7260;
+    padding: 10px 20px;
+    margin:10px 6%;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+nav .navitem:hover {
+    color: #484d3f;
+    text-decoration: underline;
+} 
+
+nav .navhead {
+    color: #6b7260;
+    font-size: 36px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+nav .navhead:hover {
+    color: #484d3f;
+}
+
+/* Mobile navbar using java */
+
+.mobile-navbar {
+    background-color: #F9FAFB;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #F9FAFB;
+    color: #6b7260;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #F9FAFB;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+.mobile-navitem {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #6b7260;
+    border-bottom: 1px solid #F9FAFB;
+}
+
+.mobile-navitem:hover {
+    background-color: #F9FAFB;
+    color: #484d3f;
+}
+
+/* Homepage */
+
+.hero {
+    background-color: #F9FAFB;
+    text-align: center;
+    padding: 7vw;
+    margin: 5% 5%;
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 10px #6b7260);
+    max-width: 60vw;
+    max-height: 40vh;
+    font-size: larger;
+}
+
+.missionstatement {
+    background-color: #F9FAFB;
+    padding: 8vw;
+    text-align: center;
+    margin: 5% auto;
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 10px #6b7260);
+    max-width: 60vw;
+    max-height: 40vh;
+    text-align: center;
+    font-size: 32px;
+}
+
+.volunteer {
+    background-color: #F9FAFB;
+    padding: 4vw;
+    margin: 5% 20%;
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 10px #6b7260);
+    max-width: 60vw;
+    max-height: 30vh;
+    text-align: center;
+    font-size: larger;
+}
+
+.donation {
+    background-color: #F9FAFB;
+    padding: 20px;
+    margin: 5%;
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 10px #6b7260);
+    max-width: 90vw;
+    text-align: center;
+    font-size: larger;
+}
+
+/*Home Page Images*/
+.hero-image {
+    max-width: 20vw;
+    float: right;
+    margin: 0% 5%;
+    border-radius: 12px;
+    background-color: #ffffff00;
+    filter: drop-shadow(8px 8px 10px #6b7260);
+}
+
+.mission-image {
+    max-width: 20vw;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    margin: 0% 5%;
+    background-color: #ffffff00;
+    filter: drop-shadow(8px 8px 10px #6b7260);
+}
+
+.volunteer-image {
+    margin: 0% 5%;
+    max-width: 20vw;
+    border-radius: 10px;
+    float: right;
+    position: relative;
+    background-color: #ffffff00;
+    filter: drop-shadow(8px 8px 10px #6b7260);
+}
+
+/*about us page*/
+.aboutus-top {
+    background-color: #F9FAFB;
+    text-align: center;
+    padding: 1vw;
+    margin: 5% auto;
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 10px #6b7260);
+    max-width: 60vw;
+    max-height: 40vh;
+    font-size: larger
+}
+
+.aboutus-mid {
+    background-color: #F9FAFB;
+    text-align: center;
+    padding: 7vw;
+    margin: 5% auto;
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 10px #6b7260);
+    max-width: 60vw;
+    max-height: 40vh;
+    font-size: larger
+}
+
+.aboutus-bot {
+    background-color: #F9FAFB;
+    text-align: center;
+    padding: 7vw;
+    margin: 5% auto;
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 10px #6b7260);
+    max-width: 60vw;
+    max-height: 40vh;
+    font-size: larger;
+}
+
+.aboutus-bot li {
+    list-style-type: none;
+}
+
+
+/*contact page*/
+.car {
+    background-color: #F9FAFB;
+    margin:  auto;
+    padding: 10vw;
+    text-align: center;
+    margin: 5%;
+    position: relative;
+    top: 50%;
+    left: 5%;
+    border-radius: 10px;
+    filter: drop-shadow(10px 10px 10px #6b7260);
+    max-width: 60vw;
+}
+
+.carousel {
+    background-color: #F9FAFB;
+}
+
+.carousel-inner {
+    background-color: #F9FAFB;
+    text-align: center;
+    max-width: 80vw;
+    margin:  50px 10vw;
+}
+
+.context {
+    text-align: center;
+}
+
+/* Button styles */
+.donbutton {
+    background-color: #F9FAFB;
+    color: #6b7260;
+    padding: 20px 20px;
+    border: solid 2px #6b7260;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.donbutton:hover {
+    color: #484d3f;
+    filter: drop-shadow(0px 0px 5px #6b7260);
+}
+
+.box-left {
+    margin-left: 12%;
+}
+
+.box-right {
+    margin-right: 12%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%484d3f' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+.carousel-control-prev-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%484d3f' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%484d3f' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%484d3f' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.contactbutton {
+    background-color: #F9FAFB;
+    color: #6b7260;
+    padding: 10px 20px;
+    border: solid 2px #6b7260;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 47%;
+    background-color: #F9FAFB;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.modal-content input, .modal-content select, .modal-content button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #F9FAFB;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    background-color: #BBBF95;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #BBBF95;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+#cardInfo {
+    display: none;
+}
+
+/*Footer*/
+footer {
+    background-color: #F9FAFB;
+    color: #1A1A1A;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 1000px) {
+    nav .navitem {
+        font-size: 18px;
+        margin-left: 10%;
+    }
+    nav .navhead {
+        font-size: 24px;
+    }
+    footer {
+        font-size: 14px;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .volunteer-image {
+        display: none;
+    }
+
+    .mission-image {
+        display: none;
+    }
+
+    .hero {
+        background-color: #F9FAFB;
+        padding: 20px;
+        text-align: center;
+        margin: 20px auto;
+        border-radius: 10px;
+        max-width: 800px;
+        filter: drop-shadow(0px 0px 0px #6b7260);
+    }
+    
+    .missionstatement {
+        background-color: #F9FAFB;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 10px;
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .volunteer {
+        background-color: #F9FAFB;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 10px;
+        max-width: 800px;
+        text-align: center;
+    }
+    
+    .donation {
+        background-color: #F9FAFB;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 10px;
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .car {
+        background-color: #F9FAFB;
+
+        padding: 130px 20px;
+        text-align: center;
+        margin: auto;
+        position: relative;
+        border-radius: 10px;
+        max-width: 80vw;
+        left: 0%;
+        filter: drop-shadow(0px 0px 0px #6b7260);
+    }
+    
+
+}
